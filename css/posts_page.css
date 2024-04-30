@@ -1,0 +1,67 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#37a08e, #000000);
+    font-family: "Raleway", sans-serif; 
+    height: 200vh;
+    margin: 0;
+    padding: 0;
+}
+
+.posts-container {
+    
+    max-width: 600px;
+    margin: 140px auto; 
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #ddd;
+    animation: fadeInUp 1s forwards ease-in-out;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: table-column;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #37a08e;
+    cursor: pointer;
+    display: block;
+    align-self: start;
+    animation: fadeInUp 1s forwards ease-in-out;
+}
+
+li:hover {
+    background-color: #f0f0f0;
+}
+
+.signup-heading {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
